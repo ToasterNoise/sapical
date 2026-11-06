@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sapical — desktop widgets for Windows</title>
+<style>
+  :root { --bg:#f6efe8; --card:#fffaf5; --text:#2b221e; --muted:#7a6a60; --accent:#e0884f; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Segoe UI Variable Text","Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  main { max-width:720px; margin:0 auto; padding:64px 24px; }
+  .card { background:var(--card); border-radius:20px; padding:40px 44px; box-shadow:0 10px 40px rgba(60,30,10,.10); }
+  h1 { font-weight:600; font-size:34px; margin:0 0 4px; }
+  .tag { color:var(--muted); margin:0 0 28px; }
+  h2 { font-size:18px; margin:28px 0 8px; }
+  a { color:#b85a2a; }
+  ul { padding-left:20px; }
+  footer { color:var(--muted); font-size:14px; margin-top:28px; text-align:center; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--accent); margin-right:8px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1><span class="dot"></span>Sapical</h1>
+    <p class="tag">Lightweight, native desktop widgets for Windows 11.</p>
+    <p>Sapical places three small widgets directly on the Windows desktop, behind your application windows:</p>
+    <ul>
+      <li><strong>Calendar</strong>: a month view and agenda of your Google Calendar events (read-only).</li>
+      <li><strong>Photos</strong>: a slideshow of images from a folder on your computer.</li>
+      <li><strong>Weather</strong>: current conditions and a 7-day forecast from Open-Meteo.</li>
+    </ul>
+    <h2>Google Calendar access</h2>
+    <p>When you choose <em>Connect Google Calendar</em>, Sapical asks Google for <strong>read-only</strong> access
+      to your calendar events so it can display them on your desktop. It cannot create, change or delete
+      anything. Your events are shown only on your own computer; Sapical has no servers and sends your
+      data nowhere else.</p>
+    <p>See the <a href="privacy.html">privacy policy</a> for details.</p>
+  </div>
+  <footer>Sapical · a personal project · <a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
